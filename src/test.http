@@ -1,0 +1,23 @@
+POST https://mazegame.rinderle.info/game
+Content-Type: application/json
+
+{
+  "groupName": "TeamGewinnerGewinner"
+}
+
+###
+
+POST https://mazegame.rinderle.info/game/59/move
+Content-Type: application/json
+
+{
+  "direction": "right"
+}
+
+### SOLVEDGAME
+
+GET https://mazegame.rinderle.info/game/59
+
+
+
+
