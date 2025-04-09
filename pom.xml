@@ -86,7 +86,7 @@
                             <modelNameSuffix>Dto</modelNameSuffix>
                             <configOptions>
                                 <library>restclient</library>
-                                <generateTests>false</generateTests>
+                                <testOutput>false</testOutput>
                             </configOptions>
                         </configuration>
                     </execution>

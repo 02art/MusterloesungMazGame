@@ -2,9 +2,9 @@ package com.example.musterloesungmazgame;
 
 import jakarta.annotation.PostConstruct;
 import org.openapitools.client.api.DefaultApi;
-import org.openapitools.client.model.GameDto;
-import org.openapitools.client.model.GameInputDto;
+import org.openapitools.client.model.*;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 @Component
 public class StartupBean {
@@ -16,10 +16,9 @@ public class StartupBean {
         GameInputDto gameInput = new GameInputDto();
         gameInput.setGroupName("IrgendeinName"); //Group name
 
-
-
         GameDto response = defaultApi.gamePost(gameInput);
 
         System.out.println(response);
+
     }
 }
